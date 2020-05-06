@@ -1,0 +1,35 @@
+<!-- https://docs.google.com/spreadsheets/d/1wBlkQk2hagPj3LbEnCAcVjCjNm7or5T-CSD3Mo77DLs/edit#gid=0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IW Todo</title>
+        <style>
+            *,
+            *::before,
+            *::after {
+                margin: 0;
+                padding: 0;
+            }
+            html,
+            body {
+                height: 100%;
+                font-family: sans-serif;
+            }
+        </style>
+        <link rel="stylesheet" href="./styles/tailwind.css" />
+    </head>
+    <body class="bg-gray-100">
+        <header
+            class="sticky top-0 h-12 font-bold text-xl bg-blue-600 text-white flex justify-center items-center z-10"
+        >
+            New todo list !!
+        </header>
+        <section id="app" class="h-full">
+            <main class="outlet h-full"></main>
+        </section>
+        <script type="module" src="./js/app.js"></script>
+    </body>
+</html>

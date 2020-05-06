@@ -1,0 +1,23 @@
+{
+    "name": "tp-todo-pwa",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "server": "es-dev-server --app-index index.html --node-resolve --watch -p 8080",
+        "api": "npx json-server --watch database/db.json",
+        "style": "tailwindcss build styles/main.css -o styles/tailwind.css"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "idb": "^5.0.2",
+        "lit-html": "^1.2.1",
+        "page": "^1.11.6"
+    },
+    "devDependencies": {
+        "es-dev-server": "^1.48.1",
+        "json-server": "^0.16.1",
+        "tailwindcss": "^1.4.4"
+    }
+}
